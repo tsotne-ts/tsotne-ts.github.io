@@ -1,0 +1,81 @@
+div[class*="col-"] {
+  padding: 15px;
+}
+
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
+}
+
+.carousel-indicators [data-bs-target],
+.carousel-indicators [data-bs-target] .active {
+  /* padding: 10px; */
+  width: 1rem !important;
+  height: 1rem !important;
+  border-radius: 50%;
+  border: 0;
+  background-color: var(--darkYellow) !important;
+}
+
+.container {
+  padding-right: 45px !important;
+  padding-left: 45px !important;
+}
+
+.custom {
+  height: 200px !important;
+  width: 100% !important;
+}
+
+.form_background .form-group {
+  margin-bottom: initial !important;
+  padding-bottom: initial !important;
+}
+
+.form_background .btn {
+  margin: 20px 0 !important;
+  padding: 10px 0 !important;
+  background-color: var(--darkYellow) !important;
+  color: aliceblue !important;
+  font-weight: lighter !important;
+  font-size: 12px !important;
+  transition: 0.3s !important;
+  border: none !important;
+}
+
+.form_background .btn:hover {
+  background-color: var(--black) !important;
+}
+
+.form-group::placeholder {
+  text-transform: uppercase !important;
+}
+
+.navbar-toggler {
+  padding: 12px !important;
+  background-color: var(--darkYellow) !important;
+}
+
+.list-group-flush {
+  --bs-border-color: rgba(193, 157, 96, 0.1);
+}
+
+:is(
+    .about_candore .nav-tabs,
+    .about_candore .nav-tabs .nav-link.active,
+    .about_candore .nav-tabs .nav-link.active:hover,
+    .about_candore .nav-tabs .nav-link:hover,
+    .about_candore .nav-link:active,
+    .about_candore .nav-tabs button
+  ) {
+  border: none !important;
+}
+
+.about_candore .nav-link:hover {
+  color: var(--black) !important;
+}
+
+.about_candore .nav-item button {
+  font-size: 18px;
+}

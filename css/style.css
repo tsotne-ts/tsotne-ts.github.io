@@ -1,0 +1,1289 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+  font-family: "Libre Caslon Display", sans-serif;
+}
+
+body {
+  font-family: "mainFont", sans-serif;
+}
+
+@font-face {
+  font-family: "Noah";
+  src: url(../fonts/noah-regular.otf);
+}
+
+/* main colors */
+:root {
+  --red: rgba(230, 95, 120, 255);
+  --asideColor: rgb(242, 238, 232);
+  --darkYellow: rgb(193, 157, 96);
+  --lightYellow: rgb(255, 193, 7);
+  --cream: rgba(253, 251, 248, 255);
+  --cardTheme: rgb(119, 119, 119);
+  --black: rgb(27, 27, 27);
+  --gray: rgb(119, 119, 119);
+  --mainFont: "Noah";
+  --borderBottom: rgba(193, 157, 96, 0.1);
+}
+
+.copyright::after {
+  content: "\00A9";
+}
+
+/* header */
+
+header {
+  background-color: var(--asideColor);
+}
+
+header nav {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 9999;
+}
+
+header .logo {
+  max-width: 195px;
+  padding-bottom: 30px;
+}
+
+.offcanvas-header .btn-close {
+  top: 0;
+  right: 0;
+  background-color: var(--lightYellow);
+}
+
+.candore_box {
+  background-color: var(--asideColor);
+  color: var(--black);
+  font-weight: lighter;
+  padding: 70px 40px 40px 40px;
+}
+
+.list-group-item {
+  background-color: var(--asideColor);
+  border: none;
+  border-bottom: 1px solid var(--borderBottom);
+}
+
+.list-group-item a {
+  font-family: var(--mainFont);
+  text-decoration: none;
+  padding: 10px 0;
+  color: var(--black) !important;
+  transition: 0.3s !important;
+}
+
+.list-group-item a:hover {
+  color: var(--darkYellow) !important;
+}
+
+.list-group-item .active {
+  color: var(--darkYellow) !important;
+}
+
+.list-group-item .active:hover {
+  color: var(--black) !important;
+}
+
+.shop_items {
+  padding: 0 20px;
+}
+
+.shop_items a {
+  padding: 5px;
+  display: block;
+  font-weight: lighter;
+}
+
+.header_dropdown a:hover {
+  background-color: var(--asideColor);
+}
+
+.fa-chevron-down {
+  font-size: 8px;
+}
+
+.nav_list {
+  padding-bottom: 30px;
+}
+
+.nav_links {
+  padding: 30px 0;
+}
+
+.nav_links a {
+  text-decoration: none;
+  color: var(--black);
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+
+.nav_links a:hover {
+  color: var(--darkYellow);
+}
+
+/* hero section - carousel part */
+
+.banner {
+  position: relative;
+}
+
+.carousel img {
+  height: 700px;
+  object-fit: cover;
+}
+
+.carousel_text {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.top_title {
+  color: aliceblue;
+  text-transform: uppercase;
+  font-size: clamp(0.5rem, 0.8vw, 1.6rem);
+  letter-spacing: 7px;
+  font-weight: lighter;
+}
+
+.carousel_text h1 {
+  color: aliceblue;
+  font-size: clamp(1.5rem, 2.5vw, 4rem);
+  width: 100%;
+}
+
+.descr {
+  display: block;
+  color: aliceblue;
+  text-transform: capitalize;
+  font-size: clamp(1rem, 1.5vw, 2rem);
+  color: var(--darkYellow);
+  font-weight: lighter;
+}
+
+.addr {
+  display: block;
+  font-size: clamp(0.8rem, 1vw, 1.8rem);
+  padding: 10px;
+}
+
+.menu_click {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: aliceblue;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid var(--darkYellow);
+}
+
+.menu_click:hover {
+  text-decoration: none;
+  background-color: var(--darkYellow);
+  color: aliceblue;
+}
+
+.call_now {
+  transform: rotate(180deg);
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  position: absolute;
+  bottom: 45%;
+  right: 3%;
+  line-height: 1;
+  z-index: 3;
+}
+
+.call_now a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--darkYellow);
+  font-size: clamp(0.5rem, 0.7vw, 1.6rem);
+  font-weight: lighter;
+  letter-spacing: 3px;
+}
+
+.call_now span {
+  display: block;
+  color: aliceblue;
+  font-family: "Libre Caslon Display", sans-serif;
+  font-size: clamp(1rem, 1vw, 2rem);
+  letter-spacing: initial;
+}
+
+.call_now img {
+  height: 50px;
+  width: 50px;
+  padding: 7px;
+  margin: 0;
+  object-fit: cover;
+  border: 1px solid var(--darkYellow);
+  border-radius: 50%;
+  vertical-align: sub;
+  animation: pulse 2s infinite;
+}
+
+/* about candore */
+.about_candore {
+  padding: 120px 0;
+  line-height: 1.8;
+}
+
+.title_top {
+  color: var(--darkYellow);
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: lighter;
+
+  word-spacing: 3px;
+}
+
+.about_candore h2 {
+  font-size: 46px;
+  text-transform: capitalize;
+}
+
+.about_candore p {
+  color: var(--gray);
+  font-weight: lighter;
+}
+
+.about_candore p::first-letter {
+  text-transform: capitalize;
+}
+
+.reservation {
+  display: flex;
+  align-items: center;
+}
+
+.reservation a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--darkYellow);
+  font-size: 12px;
+  font-weight: lighter;
+  letter-spacing: 3px;
+  padding: 0 10px;
+}
+
+.reservation span {
+  display: block;
+  color: var(--black);
+  font-family: "Libre Caslon Display", sans-serif;
+  font-size: 26px;
+  letter-spacing: initial;
+}
+
+.reservation img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}
+
+.image_01 {
+  margin-top: 90px;
+  margin-bottom: 30px;
+}
+
+.image_02 {
+  margin-top: 30px;
+  margin-bottom: 90px;
+}
+/* second section */
+
+.b-background {
+  background-color: var(--black);
+}
+
+.b-background h2 {
+  color: aliceblue;
+}
+
+.signature {
+  height: 52px;
+  width: 70px;
+}
+
+.chief_name {
+  color: aliceblue;
+  text-transform: capitalize;
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+.chief_position {
+  color: var(--darkYellow);
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: lighter;
+  letter-spacing: 3px;
+}
+
+.chief_about {
+  padding-left: 10px;
+}
+
+/* chief recommends secton */
+
+.chief_recommends {
+  text-align: center;
+  padding: 120px 0;
+  line-height: 1.8;
+}
+
+.chief_recommends h2 {
+  font-size: 46px;
+  text-transform: capitalize;
+  padding-bottom: 60px;
+}
+
+.item {
+  position: relative;
+  overflow: hidden;
+}
+
+.item .meal_text {
+  position: absolute;
+  bottom: -27px;
+  /* bottom: 10px; */
+  left: 5px;
+  right: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 10px;
+  color: aliceblue;
+  z-index: 3;
+  transition: all 0.2s ease-in-out;
+}
+
+.item:hover .meal_text {
+  position: absolute;
+  bottom: 10px;
+  left: 5px;
+  right: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 10px;
+  color: aliceblue;
+  z-index: 3;
+}
+
+.meal_text .fa-burger {
+  font-size: 28px;
+  padding-bottom: 10px;
+}
+
+.meal_text .small_text {
+  display: block;
+  color: var(--darkYellow);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+
+.meal_text h4 {
+  font-size: 26px;
+  text-transform: capitalize;
+  font-weight: lighter;
+  padding: 10px;
+}
+
+.under_line {
+  display: block;
+  margin: 0 auto;
+  padding: 1px 30px;
+  max-width: 20%;
+  background-color: aliceblue;
+  font-weight: lighter;
+  transition: all 0.6s ease-in-out;
+}
+
+.item:hover .under_line {
+  max-width: 50%;
+}
+
+.meal_description {
+  display: block;
+  margin-top: 10px;
+  font-weight: lighter;
+  font-style: italic;
+  color: aliceblue;
+  font-size: 14px;
+}
+
+.meal_description::first-letter {
+  text-transform: capitalize;
+}
+.chief_recommends_img {
+  transition: all 0.2s ease-in-out;
+}
+
+.item:hover .chief_recommends_img {
+  transform: scale(1.1);
+}
+
+/* testimonial */
+.background_img {
+  background-image: url(../images/banner5.jpg);
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: color-burn;
+  background-position: top;
+  background-repeat: none;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.testimonial_carousel {
+  padding: 5px;
+  line-height: normal;
+  word-break: break-word;
+}
+
+.five_stars {
+  padding-bottom: 15px;
+}
+
+.fa-star {
+  color: var(--darkYellow);
+}
+
+.testimonial_text {
+  display: block;
+  color: aliceblue;
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 1.2;
+  padding-bottom: 15px;
+}
+
+.customer_name {
+  padding-bottom: 5px;
+  color: var(--darkYellow);
+  font-size: 14px;
+}
+
+.review {
+  color: aliceblue;
+  font-size: 12px;
+}
+
+.testimonial_carousel img {
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+/* opening hours */
+
+.opening_hours {
+  position: absolute;
+  top: -20%;
+  right: 10px;
+  padding: 50px 25px;
+  background-color: var(--black);
+  color: aliceblue;
+}
+
+.opening_hours h4 {
+  font-size: 36px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  margin-bottom: 20px;
+}
+
+.oh_date {
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+.oh_time {
+  font-weight: lighter;
+  font-size: 24px;
+  color: var(--gray);
+  font-family: "Libre Caslon Display", sans-serif;
+}
+
+.line_v {
+  height: 100%;
+  width: 1px;
+  margin: 0 auto;
+  background-color: var(--darkYellow);
+}
+
+.opening_hours-bottom button {
+  color: aliceblue;
+  border: 1px solid var(--darkYellow);
+  padding: 10px 20px;
+  background-color: transparent;
+  margin: 0 auto;
+  font-size: clamp(0.4rem, 0.7vw, 0.8rem);
+  letter-spacing: 3px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.opening_hours-bottom button:hover {
+  background-color: var(--darkYellow);
+  cursor: pointer;
+}
+
+.oh_call_now {
+  margin-top: 30px;
+  font-size: 12px;
+  color: var(--gray);
+  font-weight: lighter;
+}
+
+.oh_call_now::first-letter {
+  text-transform: capitalize;
+}
+
+.oh_call_now a {
+  font-size: 15px;
+  text-decoration: none;
+  color: var(--darkYellow);
+}
+
+.oh_address {
+  font-size: 12px;
+  color: var(--gray);
+}
+
+.oh_address a {
+  text-decoration: none;
+  color: var(--darkYellow);
+  font-size: 14px;
+}
+
+/* service box */
+.service_box img {
+  height: 52px;
+  width: 50px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item_text {
+  padding-left: 20px;
+}
+
+.meal_type {
+  font-size: 26px;
+  font-family: "Libre Caslon Display", sans-serif;
+  font-weight: lighter;
+}
+.meal_type_info {
+  font-size: 14px;
+  font-weight: lighter;
+  color: var(--gray);
+}
+
+/* first class services  */
+
+.current_menu {
+  font-size: 14px;
+  color: var(--darkYellow);
+  font-weight: lighter;
+}
+
+.flip-card h4 {
+  font-size: 26px;
+  font-weight: lighter;
+}
+
+.back_card_text {
+  font-size: 14px;
+  color: var(--gray);
+  padding-bottom: 20px;
+}
+
+.flip-card-back button {
+  margin: 0 auto;
+  outline: 1px solid var(--black);
+  border: none;
+  color: aliceblue;
+  background-color: var(--black);
+  font-weight: lighter;
+  font-size: 14px;
+  padding: 15px 25px;
+  transition: 0.9s ease-out;
+}
+
+.flip-card-back button:hover {
+  color: var(--black);
+  background-color: transparent;
+}
+
+.back_card_text::first-letter {
+  text-transform: capitalize;
+}
+
+.flip-card {
+  background-color: transparent;
+  height: 450px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(-180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-image: url(../images/flip1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: color-burn;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.flip-card-front img {
+  height: 37px;
+  width: 36px;
+  margin-bottom: 20px;
+}
+
+.flip-card-back {
+  padding: 80px 30px 30px 30px;
+  background-color: var(--asideColor);
+  color: var(--black);
+  transform: rotateY(180deg);
+}
+/* menu starter */
+.dishes {
+  margin-bottom: 30px;
+}
+
+.starter_dish {
+  padding: 10px 0;
+}
+
+.starter_dish img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.mb_meal_name {
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Libre Caslon Display", sans-serif;
+  font-weight: lighter;
+}
+
+.mb_meal_deco {
+  display: inline-block;
+  height: 1px;
+  width: 30%;
+  border-bottom: 1px dashed var(--darkYellow);
+  vertical-align: middle;
+  margin: 0 10px;
+  padding-top: 15px;
+  flex-grow: 1;
+}
+
+.mb_meal_price {
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Libre Caslon Display", sans-serif;
+  color: var(--darkYellow);
+}
+
+.mb_meal_descr {
+  font-size: 14px;
+  color: var(--gray);
+  font-weight: lighter;
+}
+
+.mb_meal_descr::first-letter {
+  text-transform: capitalize;
+}
+
+.dish_body {
+  flex-grow: 3;
+  padding-left: 20px;
+}
+
+.dish_body_main {
+  padding-bottom: 5px;
+}
+
+/* meet our chefs section */
+.meet_chefs {
+  height: 408px;
+}
+
+.meet_background_1 {
+  background-image: url(../images/chef2.jpg);
+  background-size: cover;
+}
+
+.meet_background_2 {
+  background-image: url(../images/chef3.jpg);
+  background-size: cover;
+}
+
+.meet_background_3 {
+  background-image: url(../images/chef1.jpg);
+  background-size: cover;
+}
+
+.chef_info {
+  color: var(--black);
+  background-color: var(--asideColor);
+  bottom: -20px;
+  left: 50px;
+  right: 50px;
+  transition: 0.5s;
+}
+
+.chefs_name {
+  font-size: 20px;
+  font-family: "Libre Caslon Display", sans-serif;
+  font-weight: lighter;
+  padding: 10px 10px 0 10px;
+}
+
+.chefs_position {
+  font-size: 14px;
+  font-weight: lighter;
+  padding: 0 10px 10px 10px;
+}
+
+.meet_chefs:hover .chef_info {
+  opacity: 0;
+}
+
+.additional {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: aliceblue;
+  padding-top: 7rem;
+  opacity: 0;
+  transition: 0.7s;
+}
+
+.meet_chefs:hover .additional {
+  opacity: 1;
+}
+
+.chefs_description {
+  padding: 0 10px 10px 10px;
+}
+
+.additional .chefs_position {
+  color: var(--darkYellow);
+}
+
+.additional .chefs_links a {
+  padding: 0 8px;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.additional .chefs_links a:hover {
+  color: var(--darkYellow);
+}
+
+/* wine bar part */
+.wine_bar_info {
+  padding: 40px 0;
+}
+
+.starter_dish {
+  padding: 20px 0;
+}
+
+.wine_bar {
+  overflow: hidden;
+}
+
+.wine_bar_img {
+  transition: 0.3s;
+}
+
+.wine_bar_img:hover {
+  transform: scale(1.1);
+}
+
+/* food category part */
+.aside_like_background {
+  background-color: var(--asideColor);
+}
+
+.food_cat {
+  padding: 40px 20px;
+  background-color: var(--cream);
+}
+
+.food_cat h6 {
+  font-size: 24px;
+  font-family: "Libre Caslon Display", sans-serif;
+  padding: 10px 0 5px;
+}
+
+.food_cat_img {
+  height: 46px;
+  width: 45px;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.food_cat_text {
+  font-size: 14px;
+  color: var(--gray);
+  font-weight: lighter;
+}
+
+.back_shape {
+  height: 120px;
+  width: 120px;
+  right: 40px;
+  bottom: 20px;
+  opacity: 0.06;
+  transition: 0.5s;
+}
+
+.food_cat:hover .food_cat_img {
+  transform: rotate(360deg);
+}
+
+.food_cat:hover .back_shape {
+  right: 40px;
+  bottom: 20;
+  transform: rotate(360deg);
+}
+
+/* booking form section */
+.booking_info {
+  background-image: url(../images/slider2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: color-burn;
+  color: aliceblue;
+}
+
+.booking_info .five_stars {
+  margin-top: 20px;
+}
+
+.booking_info .reservation {
+  padding-top: 30px;
+}
+
+.call_us {
+  font-size: 13px;
+  font-weight: lighter;
+  font-weight: lighter;
+}
+
+.booking_info a span {
+  color: aliceblue;
+}
+
+.booking_info h5 {
+  width: 80%;
+  font-size: 32px;
+}
+
+.form_background {
+  padding: 45px 30px;
+  background-color: var(--asideColor);
+}
+
+.form_background h4 {
+  color: var(--black);
+  font-size: 36px;
+}
+
+/* footer part */
+footer {
+  background-color: var(--black);
+}
+
+footer h3 {
+  color: var(--darkYellow);
+  padding: 10px 0;
+}
+
+.footer_text {
+  color: var(--gray);
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.footer_text a,
+.call_number {
+  padding-bottom: 20px;
+  text-decoration: none;
+  color: var(--gray);
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.call_number {
+  color: aliceblue;
+  font-size: 24px;
+  transition: 0.3s;
+}
+
+.call_number:hover {
+  color: var(--darkYellow);
+  text-decoration: none;
+}
+
+.email {
+  padding-bottom: 3px;
+  margin-bottom: 3px;
+  text-decoration: none !important;
+  color: var(--gray);
+  font-size: 14px;
+  font-weight: lighter;
+  transition: 0.3s;
+}
+
+.email:hover {
+  color: aliceblue;
+}
+
+footer .change_lang {
+  border: 1px solid var(--darkYellow);
+  color: aliceblue;
+  font-weight: lighter;
+  padding: 10px 20px;
+  background-color: transparent;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.subscribe_text {
+  padding-bottom: 20px;
+}
+
+.subscribe_input {
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 10px;
+  background-color: transparent;
+  color: var(--darkYellow);
+  border: 1px solid var(--darkYellow);
+  outline: 1px solid var(--darkYellow);
+}
+
+.subscribe {
+  border: none;
+  color: aliceblue;
+  background-color: var(--darkYellow);
+  padding: 11px;
+  bottom: 3px;
+  right: 3px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.subscribe:hover {
+  background-color: aliceblue;
+  color: var(--black);
+}
+
+.footer_links a {
+  text-decoration: none;
+  color: aliceblue;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+
+.footer_links:first-of-type a {
+  padding-left: 0;
+}
+
+.footer_links a:hover {
+  color: var(--darkYellow);
+}
+
+.footer_line {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.footer_bottom {
+  color: aliceblue;
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+.copyright::after {
+  content: "\00A9";
+}
+
+/* --about page-- */
+
+.cover_top_title {
+  padding-top: 14rem;
+  color: aliceblue;
+  font-size: 12px;
+  letter-spacing: 7px;
+  font-weight: lighter;
+}
+
+.cover h2 {
+  color: aliceblue;
+  font-size: 70px;
+  width: 100%;
+}
+
+.cover_descr {
+  display: block;
+  color: aliceblue;
+  text-transform: capitalize;
+  font-size: 30px;
+  color: var(--darkYellow);
+  font-weight: lighter;
+}
+
+.about_backimg {
+  height: 600px;
+  background-image: url(../images/AboutPageCover.jpeg);
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: color-burn;
+  background-position: top;
+  background-repeat: none;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* --menu page-- */
+
+.menu_backimg {
+  height: 600px;
+  background-image: url(../images/MenuCoverImg.jpeg);
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: color-burn;
+  background-position: top;
+  background-repeat: none;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.menu_ul {
+  text-decoration: none;
+}
+
+.menu_ul button {
+  color: var(--darkYellow);
+}
+
+/* blog page */
+
+.blog_info_box {
+  height: 445px;
+  width: 334px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.blog_info_box img {
+  transition: 0.3s;
+}
+
+.blog_info {
+  color: var(--black);
+  background-color: var(--asideColor);
+  inset: 75% 50px 5px 50px;
+  transition: 0.3s;
+}
+
+.blog_info_box:hover img {
+  transform: scale(1.04);
+}
+
+.blog_info_box:hover .blog_info {
+  inset: 65% 50px 20px 50px;
+}
+
+.top_text {
+  font-size: 20px;
+  font-family: "Libre Caslon Display", sans-serif;
+  font-weight: lighter;
+  padding: 10px;
+}
+
+.bottom_text {
+  font-size: 14px;
+  font-weight: lighter;
+  padding: 0 10px 10px 10px;
+}
+
+.date_time {
+  color: var(--asideColor);
+  padding: 5px;
+  width: 15%;
+  border: 1px solid var(--asideColor);
+  top: 10px;
+  left: 10px;
+}
+
+.pagination a {
+  text-decoration: none;
+  border: none;
+  color: var(--black);
+  background-color: none;
+}
+
+.pagination a:hover {
+  color: var(--darkYellow);
+}
+
+/*contact page*/
+
+.address_box {
+  margin: 30px 0;
+  background-color: var(--asideColor);
+  font-size: 24px;
+  font-family: "Libre Caslon Display", sans-serif;
+}
+
+.address_box i {
+  color: var(--darkYellow);
+  font-size: 50px;
+  margin-right: 30px;
+}
+
+.address_box a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.address_box_descr {
+  font-size: 14px;
+}
+
+.our_shop_back {
+  background-image: url(../images/slider2.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: color-burn;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+/* animation for header section banner  */
+@keyframes pulse {
+  0% {
+    transform: scale(0.95) rotate(180deg);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+
+  70% {
+    transform: scale(1) rotate(180deg);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: scale(0.95) rotate(180deg);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .carousel-caption {
+    padding: initial !important;
+  }
+
+  .menu_click {
+    font-size: 8px;
+    padding: 5px;
+    margin-top: initial;
+  }
+
+  .opening_hours {
+    position: static;
+  }
+
+  .opening_hours-bottom button {
+    padding: 3px 5px;
+    letter-spacing: initial;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-caption {
+    padding: 3px 0 !important;
+  }
+
+  .menu_click {
+    font-size: 8px;
+    padding: 5px;
+    margin-top: initial;
+  }
+
+  .call_now img {
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+  }
+
+  .opening_hours-bottom button {
+    padding: 3px 5px;
+    letter-spacing: initial;
+  }
+}
+
+/* @media screen and (max-width: 576px) {
+  
+} */
+
+@media screen and (max-width: 300px) {
+  .logo {
+    display: none;
+  }
+}

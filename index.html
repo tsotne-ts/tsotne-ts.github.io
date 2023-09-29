@@ -1,0 +1,1518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Project - Candóre</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Libre+Caslon+Display&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bs.css" />
+    <!-- bootstrap 5.3 css cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- my css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- cdnjs.com link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- header Section -->
+    <header>
+      <nav>
+        <button
+          class="btn navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasLeft"
+          aria-controls="offcanvasLeft"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="16"
+            fill="currentColor"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+        </button>
+
+        <div
+          class="offcanvas offcanvas-start candore_box"
+          tabindex="-1"
+          id="offcanvasLeft"
+          aria-labelledby="offcanvasLeftLabel"
+        >
+          <div class="offcanvas-header position-relative">
+            <a class="navbar-brand" href="index.html">
+              <img
+                src="images/logo-dark.png"
+                alt="logo of the brand"
+                class="logo"
+              />
+            </a>
+            <button
+              type="button"
+              class="btn-close position-absolute"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body text-uppercase">
+            <ul class="list-group nav_list">
+              <li class="list-group-item">
+                <a class="active" href="index.html">home</a>
+              </li>
+              <li class="list-group-item">
+                <a href="about.html">about</a>
+              </li>
+              <li class="list-group-item">
+                <a href="menu.html">menu</a>
+              </li>
+              <li class="list-group-item">
+                <a href="blog.html">blog</a>
+              </li>
+
+              <li class="list-group-item">
+                <a href="contact.html">contact</a>
+              </li>
+            </ul>
+
+            <ul class="nav_links">
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- main body -->
+    <main class="main_body">
+      <!--banner part -->
+      <section class="main_body banner first_section">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="3000"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/slider1.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block carousel_text">
+                <span class="top_title">est.1895</span>
+                <h1>Welcome to Candóre</h1>
+                <span class="descr">restaurant & wine bar</span>
+                <span class="addr">1616 Broadway NY, New York</span>
+                <a href="#" class="menu_click">check our menu</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/slider2.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block carousel_text">
+                <span class="top_title">est.1895</span>
+                <h1>Welcome to Candóre</h1>
+                <span class="descr">restaurant & wine bar</span>
+                <span class="addr">1616 Broadway NY, New York</span>
+                <a href="" class="menu_click">check our menu</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/slider3.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block carousel_text">
+                <span class="top_title">est.1895</span>
+                <h1>New York's Oldest</h1>
+                <span class="descr">restaurant & wine bar</span>
+                <span class="addr">1616 Broadway NY, New York</span>
+                <a href="" class="menu_click">check our menu</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="call_now">
+          <img src="images/tray.png" alt="" />
+          <a href="tel:+8551004444">
+            <span>855 100 4444</span>
+            reservation
+          </a>
+        </div>
+      </section>
+      <!-- about candóre section -->
+      <section class="about_candore">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <span class="title_top">candóre restaurant</span>
+              <h2>few words about us</h2>
+              <p>
+                restaurant vulputate massa sit amet ravida haretra nuam enim mi
+                obortis eset uctus enec accumsan eu justo aliquam sit amet
+                auctor orci donec vitae vehicula risus duise nunc sapien,
+                accumsan id mauris ac ullamcorper rutrum asiquam congue nie
+                ipsum auctor frinilla donec finibus sapien ut leo cursus
+                ullamco.
+              </p>
+              <p>
+                wine porta laoreet ante, luctus maximus ipsum blandit eget.
+                Integer mollis eniman metus, eget consequat enim commodo eduis
+                id magna arcu duis nec elit praesent convallis et justo nec
+                tristique sapien quis.
+              </p>
+              <div class="reservation">
+                <img src="images/tray_yellow.png" alt="" />
+                <a href="tel:+8551004444">
+                  reservation
+                  <span>855 100 4444</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <img
+                src="images/about2.jpg"
+                alt="image of hef"
+                class="image_01"
+              />
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <img
+                src="images/about.jpg"
+                alt="image of chef"
+                class="image_03"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- chief section -->
+      <section class="about_candore b-background">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="images/chef.jpg" alt="" />
+            </div>
+            <div class="col-lg-6 d-flex flex-column justify-content-center">
+              <span class="title_top">20 year of experience</span>
+              <h2>big chief's menu</h2>
+              <p>
+                restaurant vulputate massa ons amet ravida haretra nuam the
+                drana miss uctus enec accumsan eu justo aliquam sit amet auctor
+                orci done vitae vehicula risus duise nunc sapien, accumsan id
+                mauris rutrum asiquam congue nie ipsum auctor frinilla finibus
+                sapien.
+              </p>
+              <div class="d-flex">
+                <img
+                  src="images/signature.svg"
+                  alt=""
+                  style="width: 50px"
+                  class="signature"
+                />
+                <div class="d-inline chief_about">
+                  <span class="chief_name d-block">harold brown</span>
+                  <span class="chief_position">master chief</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- chief recommends -->
+      <section class="chief_recommends aside_like_background">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h2>chief recommends</h2>
+            </div>
+            <div class="col-lg-4">
+              <div class="item">
+                <img
+                  src="images/hamburger.jpg"
+                  alt=""
+                  class="chief_recommends_img"
+                />
+                <div class="meal_text">
+                  <i class="fa-solid fa-burger"></i>
+                  <span class="small_text">food</span>
+                  <h4>rusty's burger</h4>
+                  <span class="under_line"></span>
+                  <span class="meal_description">
+                    smoked, pulled beef ribs, bbq sause
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="item">
+                <img
+                  src="images/salad.jpg"
+                  alt=""
+                  class="chief_recommends_img"
+                />
+                <div class="meal_text">
+                  <i class="fa-solid fa-burger"></i>
+                  <span class="small_text">food</span>
+                  <h4>waldorf salad</h4>
+                  <span class="under_line"></span>
+                  <span class="meal_description">
+                    smoked, pulled beef ribs, bbq sause
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="item">
+                <img
+                  src="images/wine.jpg"
+                  alt=""
+                  class="chief_recommends_img"
+                />
+                <div class="meal_text">
+                  <i class="fa-solid fa-burger"></i>
+                  <span class="small_text">food</span>
+
+                  <h4>corvo dal 1824</h4>
+                  <span class="under_line"></span>
+                  <span class="meal_description">
+                    smoked, pulled beef ribs, bbq sause
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- testimonial - opening hours -->
+      <section class="about_candore background_img position-relative">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div
+                id="carouselExampleSlidesOnly"
+                class="carousel slide"
+                data-bs-ride="carousel"
+                data-bs-interval="2000"
+              >
+                <div class="carousel-inner text-capitalize custom">
+                  <div class="carousel-item font-weight-light custom active">
+                    <div class="custom align-middle testimonial_carousel">
+                      <span class="d-block five_stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </span>
+                      <span class="d-block font-italic testimonial_text">
+                        Restaurant dapibus asue metus the nec feusiate eraten
+                        miss hendreri net ve ante the lemon sanleo nectan
+                        feugiat erat hendrerit necuis ve ante otel inilla duiman
+                        at finibus viverra neca the sene on satien.
+                      </span>
+                      <img src="images/5.jpg" alt="" class="d-inline" />
+                      <span
+                        class="d-inline d-inline-flex flex-column align-middle"
+                      >
+                        <span class="customer_name">olivia martin</span>
+                        <span class="review">customer review</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="carousel-item font-weight-light custom">
+                    <div class="custom align-middle testimonial_carousel">
+                      <span class="d-block five_stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </span>
+                      <span class="d-block font-italic testimonial_text">
+                        Restaurant dapibus asue metus the nec feusiate eraten
+                        miss hendreri net ve ante the lemon sanleo nectan
+                        feugiat erat hendrerit necuis ve ante otel inilla duiman
+                        at finibus viverra neca the sene on satien.
+                      </span>
+                      <img src="images/1.jpg" alt="" />
+                      <span
+                        class="d-inline d-inline-flex flex-column align-middle"
+                      >
+                        <span class="customer_name">nolan white</span>
+                        <span class="review">customer review</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="carousel-item font-weight-light custom">
+                    <div class="custom align-middle testimonial_carousel">
+                      <span class="d-block five_stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </span>
+                      <span class="d-block font-italic testimonial_text">
+                        Restaurant dapibus asue metus the nec feusiate eraten
+                        miss hendreri net ve ante the lemon sanleo nectan
+                        feugiat erat hendrerit necuis ve ante otel inilla duiman
+                        at finibus viverra neca the sene on satien.
+                      </span>
+                      <img src="images/4.jpg" alt="" />
+                      <span
+                        class="d-inline d-inline-flex flex-column align-middle"
+                      >
+                        <span class="customer_name">emilly brown</span>
+                        <span class="review">customer review</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- opening hours -->
+            <div class="col-lg-6">
+              <div class="opening_hours">
+                <h4 class="text-center text-capitalize">opening hours</h4>
+                <div class="opening_hours-body">
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <span class="oh_date d-block text-center">
+                        Sunday to Tusday
+                      </span>
+                      <span class="oh_time d-block text-center">10:00</span>
+                      <span class="oh_time d-block text-center">22:00</span>
+                    </div>
+                    <div class="col-lg-2">
+                      <span class="line_v d-block"></span>
+                    </div>
+                    <div class="col-lg-5">
+                      <span class="oh_date d-block text-center">
+                        Friday to Saturday
+                      </span>
+                      <span class="oh_time d-block text-center">12:00</span>
+                      <span class="oh_time d-block text-center">19:00</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="opening_hours-bottom text-center">
+                  <button class="d-block text-uppercase">
+                    make a reservation
+                  </button>
+                  <span class="oh_call_now d-block">
+                    you can also call:
+                    <a href="tel:8551004444">855 100 4444</a>
+                    to make a reservation
+                  </span>
+                  <span class="oh_address d-block">
+                    <a href="">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </a>
+                    1616 Broadway NY, New York 10001 USA
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- service box -->
+      <section class="service_box about_candore">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="item">
+                <div>
+                  <img src="images/cooking_icon_image.png" alt="" />
+                </div>
+                <div class="item_text">
+                  <span class="meal_type d-block text-capitalize">
+                    breakfast
+                  </span>
+                  <span class="meal_type_info d-block">
+                    Breakfast ut nisl quam nestibulum drana odio elementum
+                    sceisue the can golden varius the dis monte.
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="item">
+                <div>
+                  <img src="images/tray_icon_yellow.png" alt="" />
+                </div>
+                <div class="item_text">
+                  <span class="meal_type d-block text-capitalize"> lunch </span>
+                  <span class="meal_type_info d-block">
+                    The Lunch ut nisl quam nestibulum drana odio elementum
+                    sceisue the can golden varius the dis monte.
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="item">
+                <div>
+                  <img src="images/chef_icon_yellow.png" alt="" />
+                </div>
+                <div class="item_text">
+                  <span class="meal_type d-block text-capitalize">
+                    dinner
+                  </span>
+                  <span class="meal_type_info d-block">
+                    The Dinner ut nisl quam nestibulum drana odio elementum
+                    sceisue the can golden varius the dis monte.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- first class services -->
+      <section class="about_candore b-background position-relative">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <span class="title_top d-block text-center">first class</span>
+              <h2 class="text-center text-capitalize">our features</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="images/menu_img.png" alt="menu icon" />
+                    <div>
+                      <span class="current_menu text-capitalize"
+                        >current menu</span
+                      >
+                      <h4 class="text-capitalize">daily fresh menus</h4>
+                    </div>
+                  </div>
+                  <div class="flip-card-back">
+                    <span class="current_menu text-capitalize"
+                      >current menu</span
+                    >
+                    <h4 class="text-capitalize">daily fresh menus</h4>
+                    <span class="back_card_text d-block">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Commodi dolore facere tenetur. Corrupti ipsum beatae ullam
+                      dolorem inventore sapiente voluptatibus, iste eos at.
+                    </span>
+                    <button class="d-block text-capitalize">view menu</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="images/food-serving.png" alt="menu icon" />
+                    <div>
+                      <span class="current_menu text-capitalize"
+                        >address of taste</span
+                      >
+                      <h4 class="text-capitalize">fresh ingredient meals</h4>
+                    </div>
+                  </div>
+                  <div class="flip-card-back">
+                    <span class="current_menu text-capitalize"
+                      >current menu</span
+                    >
+                    <h4 class="text-capitalize">daily fresh menus</h4>
+                    <span class="back_card_text d-block">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Commodi dolore facere tenetur. Corrupti ipsum beatae ullam
+                      dolorem inventore sapiente voluptatibus, iste eos at.
+                    </span>
+                    <button class="d-block text-capitalize">view menu</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="images/chef_white.png" alt="menu icon" />
+                    <div>
+                      <span class="current_menu text-capitalize"
+                        >executive chefs</span
+                      >
+                      <h4 class="text-capitalize">senior & talented chefs</h4>
+                    </div>
+                  </div>
+                  <div class="flip-card-back">
+                    <span class="current_menu text-capitalize"
+                      >current menu</span
+                    >
+                    <h4 class="text-capitalize">daily fresh menus</h4>
+                    <span class="back_card_text d-block">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Commodi dolore facere tenetur. Corrupti ipsum beatae ullam
+                      dolorem inventore sapiente voluptatibus, iste eos at.
+                    </span>
+                    <button class="d-block text-capitalize">view menu</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- menu book -->
+      <section class="about_candore aside_like_background">
+        <!-- starter -->
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h2 class="text-center text-capitalize">starter</h2>
+            </div>
+            <div class="col-lg-6">
+              <!-- first -->
+              <div class="starter_dish d-flex justify-content-between">
+                <a href="">
+                  <img src="images/startermozzarella.jpg" alt="" />
+                </a>
+                <div class="dish_body">
+                  <div class="dish_body_main d-flex justify-content-between">
+                    <div class="mb_meal_name text-capitalize">
+                      mozzarella diapers
+                    </div>
+                    <div class="mb_meal_deco"></div>
+                    <div class="mb_meal_price">$27.00</div>
+                  </div>
+                  <div class="mb_meal_descr font-italic">
+                    fried mozzarella sticks, marinara sauce
+                  </div>
+                </div>
+              </div>
+              <!-- second -->
+              <div class="starter_dish d-flex justify-content-between">
+                <a href="">
+                  <img src="images/startermozzarella.jpg" alt="" />
+                </a>
+                <div class="dish_body">
+                  <div class="dish_body_main d-flex justify-content-between">
+                    <div class="mb_meal_name text-capitalize">
+                      buffalo wings
+                    </div>
+                    <div class="mb_meal_deco"></div>
+                    <div class="mb_meal_price">$30.50</div>
+                  </div>
+                  <div class="mb_meal_descr font-italic">
+                    spicy chicken wings, blue cheese sauce, carrot, celery
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <!-- first -->
+              <div class="starter_dish d-flex justify-content-between">
+                <a href="">
+                  <img src="images/startermozzarella.jpg" alt="" />
+                </a>
+                <div class="dish_body">
+                  <div class="dish_body_main d-flex justify-content-between">
+                    <div class="mb_meal_name text-capitalize">onion rings</div>
+                    <div class="mb_meal_deco"></div>
+                    <div class="mb_meal_price">$15.00</div>
+                  </div>
+                  <div class="mb_meal_descr font-italic">
+                    fried onion rings, smoked aioli
+                  </div>
+                </div>
+              </div>
+              <!-- second -->
+              <div class="starter_dish d-flex justify-content-between">
+                <a href="">
+                  <img src="images/startermozzarella.jpg" alt="" />
+                </a>
+                <div class="dish_body">
+                  <div class="dish_body_main d-flex justify-content-between">
+                    <div class="mb_meal_name text-capitalize">
+                      chilli con carne
+                    </div>
+                    <div class="mb_meal_deco"></div>
+                    <div class="mb_meal_price">$20.00</div>
+                  </div>
+                  <div class="mb_meal_descr font-italic">
+                    spicy ground beef, bacon, kidney beans
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- main -->
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h2 class="text-center text-capitalize">main courses</h2>
+            </div>
+            <div class="col-lg-6">
+              <!-- first -->
+              <div class="starter_dish d-flex justify-content-between">
+                <a href="">
+                  <img src="images/rusty'sburger.jpg" alt="" />
+                </a>
+                <div class="dish_body">
+                  <div class="dish_body_main d-flex justify-content-between">
+                    <div class="mb_meal_name text-capitalize">
+                      Rusty's Burger
+                    </div>
+                    <div class="mb_meal_deco"></div>
+                    <div class="mb_meal_price">$35.00</div>
+                  </div>
+                  <div class="mb_meal_descr font-italic">
+                    smoked pulled beef ribs, bbq sauce, cheddar, crisps
+                  </div>
+                </div>
+              </div>
+              <!-- second -->
+              <div class="starter_dish d-flex justify-content-between">
+                <a href="">
+                  <img src="images/cajun.jpg" alt="" />
+                </a>
+                <div class="dish_body">
+                  <div class="dish_body_main d-flex justify-content-between">
+                    <div class="mb_meal_name text-capitalize">
+                      Cajun Fish Steak
+                    </div>
+                    <div class="mb_meal_deco"></div>
+                    <div class="mb_meal_price">$30.0</div>
+                  </div>
+                  <div class="mb_meal_descr font-italic">
+                    Cajun spicied seabass, deep fried baby potatoes
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <!-- first -->
+              <div class="starter_dish d-flex justify-content-between">
+                <a href="">
+                  <img src="images/southernfriedchicken.jpg" alt="" />
+                </a>
+                <div class="dish_body">
+                  <div class="dish_body_main d-flex justify-content-between">
+                    <div class="mb_meal_name text-capitalize">
+                      Southern Fried Chicken
+                    </div>
+                    <div class="mb_meal_deco"></div>
+                    <div class="mb_meal_price">$45.50</div>
+                  </div>
+                  <div class="mb_meal_descr font-italic">
+                    Cajun coated chicken breast, fries and honey mustard
+                  </div>
+                </div>
+              </div>
+              <!-- second -->
+              <div class="starter_dish d-flex justify-content-between">
+                <a href="">
+                  <img src="images/tempura.jpg" alt="" />
+                </a>
+                <div class="dish_body">
+                  <div class="dish_body_main d-flex justify-content-between">
+                    <div class="mb_meal_name text-capitalize">
+                      House Avocado Tempura
+                    </div>
+                    <div class="mb_meal_deco"></div>
+                    <div class="mb_meal_price">$40.00</div>
+                  </div>
+                  <div class="mb_meal_descr font-italic">
+                    Sweetcorn kernels, butter, cloves garlic, potato
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- salads -->
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h2 class="text-center text-capitalize">salads</h2>
+            </div>
+            <div class="col-lg-6">
+              <!-- first -->
+              <div class="starter_dish d-flex justify-content-between">
+                <a href="">
+                  <img src="images/caesarsalad.jpg" alt="" />
+                </a>
+                <div class="dish_body">
+                  <div class="dish_body_main d-flex justify-content-between">
+                    <div class="mb_meal_name text-capitalize">caesar salad</div>
+                    <div class="mb_meal_deco"></div>
+                    <div class="mb_meal_price">$15.00</div>
+                  </div>
+                  <div class="mb_meal_descr font-italic">
+                    romaine lettuce, croutons, parmigiano
+                  </div>
+                </div>
+              </div>
+              <!-- second -->
+              <div class="starter_dish d-flex justify-content-between">
+                <a href="">
+                  <img src="images/waldrofsalad.jpg" alt="" />
+                </a>
+                <div class="dish_body">
+                  <div class="dish_body_main d-flex justify-content-between">
+                    <div class="mb_meal_name text-capitalize">
+                      Waldorf Salad
+                    </div>
+                    <div class="mb_meal_deco"></div>
+                    <div class="mb_meal_price">$10.00</div>
+                  </div>
+                  <div class="mb_meal_descr font-italic">
+                    lettuce, celery, apple, grape, walnut, waldorf sauce
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <!-- first -->
+              <div class="starter_dish d-flex justify-content-between">
+                <a href="">
+                  <img src="images/grilledsalmonsalad.jpg" alt="" />
+                </a>
+                <div class="dish_body">
+                  <div class="dish_body_main d-flex justify-content-between">
+                    <div class="mb_meal_name text-capitalize">
+                      grilled salmon salad
+                    </div>
+                    <div class="mb_meal_deco"></div>
+                    <div class="mb_meal_price">$25.00</div>
+                  </div>
+                  <div class="mb_meal_descr font-italic">
+                    grilled salmon, mixed greens, capers, orange slices
+                  </div>
+                </div>
+              </div>
+              <!-- second -->
+              <div class="starter_dish d-flex justify-content-between">
+                <a href="">
+                  <img src="images/chickencobsalad.jpg" alt="" />
+                </a>
+                <div class="dish_body">
+                  <div class="dish_body_main d-flex justify-content-between">
+                    <div class="mb_meal_name text-capitalize">
+                      Chicken Cobb Salad
+                    </div>
+                    <div class="mb_meal_deco"></div>
+                    <div class="mb_meal_price">$30.50</div>
+                  </div>
+                  <div class="mb_meal_descr font-italic">
+                    iceberg lettuce, cherry tomatoes, blue cheese, avocado
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- desserts -->
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h2 class="text-center text-capitalize">desserts</h2>
+            </div>
+            <div class="col-lg-6">
+              <!-- first -->
+              <div class="starter_dish d-flex justify-content-between">
+                <a href="">
+                  <img src="images/ NewYorkCheesecake.jpg" alt="" />
+                </a>
+                <div class="dish_body">
+                  <div class="dish_body_main d-flex justify-content-between">
+                    <div class="mb_meal_name text-capitalize">
+                      New York Cheesecake
+                    </div>
+                    <div class="mb_meal_deco"></div>
+                    <div class="mb_meal_price">$20.00</div>
+                  </div>
+                  <div class="mb_meal_descr font-italic">
+                    Cheesecake, strawberry & lime salad
+                  </div>
+                </div>
+              </div>
+              <!-- second -->
+              <div class="starter_dish d-flex justify-content-between">
+                <a href="">
+                  <img src="images/Rusty’sice-cream.jpg" alt="" />
+                </a>
+                <div class="dish_body">
+                  <div class="dish_body_main d-flex justify-content-between">
+                    <div class="mb_meal_name text-capitalize">
+                      Rusty's ice-cream
+                    </div>
+                    <div class="mb_meal_deco"></div>
+                    <div class="mb_meal_price">$10.50</div>
+                  </div>
+                  <div class="mb_meal_descr font-italic">
+                    Vanilla, bourbon, cookie, chocolate ice-cream
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <!-- first -->
+              <div class="starter_dish d-flex justify-content-between">
+                <a href="">
+                  <img src="images/veganpotato.jpg" alt="" />
+                </a>
+                <div class="dish_body">
+                  <div class="dish_body_main d-flex justify-content-between">
+                    <div class="mb_meal_name text-capitalize">
+                      Vegan Potato Waffles
+                    </div>
+                    <div class="mb_meal_deco"></div>
+                    <div class="mb_meal_price">$18.00</div>
+                  </div>
+                  <div class="mb_meal_descr font-italic">
+                    Chocolate chip cookies, marshmallow, chocolate
+                  </div>
+                </div>
+              </div>
+              <!-- second -->
+              <div class="starter_dish d-flex justify-content-between">
+                <a href="">
+                  <img src="images/applecrumble.jpg" alt="" />
+                </a>
+                <div class="dish_body">
+                  <div class="dish_body_main d-flex justify-content-between">
+                    <div class="mb_meal_name text-capitalize">
+                      Apple & Pear Crumble
+                    </div>
+                    <div class="mb_meal_deco"></div>
+                    <div class="mb_meal_price">40.00</div>
+                  </div>
+                  <div class="mb_meal_descr font-italic">
+                    Caramelized pear, oat crumble, vanilla ice-cream
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- wine -->
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h2 class="text-center text-capitalize">wine</h2>
+            </div>
+            <div class="col-lg-6">
+              <!-- first -->
+              <div class="starter_dish d-flex justify-content-between">
+                <a href="">
+                  <img src="images/riscowine.jpg" alt="" />
+                </a>
+                <div class="dish_body">
+                  <div class="dish_body_main d-flex justify-content-between">
+                    <div class="mb_meal_name text-capitalize">
+                      Riscos Malbec
+                    </div>
+                    <div class="mb_meal_deco"></div>
+                    <div class="mb_meal_price">$25.00</div>
+                  </div>
+                  <div class="mb_meal_descr font-italic">
+                    Full, Redcurrant, Spice, Chile
+                  </div>
+                </div>
+              </div>
+              <!-- second -->
+              <div class="starter_dish d-flex justify-content-between">
+                <a href="">
+                  <img src="images/domperignonwine.jpg" alt="" />
+                </a>
+                <div class="dish_body">
+                  <div class="dish_body_main d-flex justify-content-between">
+                    <div class="mb_meal_name text-capitalize">Dom Perignon</div>
+                    <div class="mb_meal_deco"></div>
+                    <div class="mb_meal_price">$30.00</div>
+                  </div>
+                  <div class="mb_meal_descr font-italic">
+                    Stylish, Premium, Iconic, Champagne
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <!-- first -->
+              <div class="starter_dish d-flex justify-content-between">
+                <a href="">
+                  <img src="images/amaronewine.jpg" alt="" />
+                </a>
+                <div class="dish_body">
+                  <div class="dish_body_main d-flex justify-content-between">
+                    <div class="mb_meal_name text-capitalize">
+                      Amarone Classico
+                    </div>
+                    <div class="mb_meal_deco"></div>
+                    <div class="mb_meal_price">$20.00</div>
+                  </div>
+                  <div class="mb_meal_descr font-italic">
+                    Intense, Rich, Spice, Italy
+                  </div>
+                </div>
+              </div>
+              <!-- second -->
+              <div class="starter_dish d-flex justify-content-between">
+                <a href="">
+                  <img src="images/wallebertawine.jpg" alt="" />
+                </a>
+                <div class="dish_body">
+                  <div class="dish_body_main d-flex justify-content-between">
+                    <div class="mb_meal_name text-capitalize">
+                      Valle Berta Gavi
+                    </div>
+                    <div class="mb_meal_deco"></div>
+                    <div class="mb_meal_price">$45.00</div>
+                  </div>
+                  <div class="mb_meal_descr font-italic">
+                    Clean, Soft, Honeysuckle, Italy
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- our features -->
+      <section class="about_candore b-background">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <span class="title_top d-block text-center">first class</span>
+              <h2 class="text-center text-capitalize">our features</h2>
+            </div>
+            <div class="col-lg-4">
+              <div class="meet_chefs meet_background_1 position-relative">
+                <div class="chef_info position-absolute">
+                  <div class="chefs_name text-center text-capitalize">
+                    martha martin
+                  </div>
+                  <div class="chefs_position text-center text-capitalize">
+                    executive chef
+                  </div>
+                </div>
+                <div class="additional">
+                  <div class="chefs_name text-center text-capitalize">
+                    martha martin
+                  </div>
+                  <div class="chefs_position text-center text-capitalize">
+                    executive chef
+                  </div>
+                  <div class="chefs_description text-center">
+                    Nulla quis efficitur lacus sulvinar suere ausue in eduis
+                    euro vesatien arcuman ontese auctor ac aleuam aretra.
+                  </div>
+                  <div class="chefs_links text-center">
+                    <a href="">
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="meet_chefs meet_background_2 position-relative">
+                <div class="chef_info position-absolute">
+                  <div class="chefs_name text-center text-capitalize">
+                    robert dan
+                  </div>
+                  <div class="chefs_position text-center text-capitalize">
+                    group head chef
+                  </div>
+                </div>
+                <div class="additional">
+                  <div class="chefs_name text-center text-capitalize">
+                    martha martin
+                  </div>
+                  <div class="chefs_position text-center text-capitalize">
+                    executive chef
+                  </div>
+                  <div class="chefs_description text-center">
+                    Nulla quis efficitur lacus sulvinar suere ausue in eduis
+                    euro vesatien arcuman ontese auctor ac aleuam aretra.
+                  </div>
+                  <div class="chefs_links text-center">
+                    <a href="">
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="meet_chefs meet_background_3 position-relative">
+                <div class="chef_info position-absolute">
+                  <div class="chefs_name text-center text-capitalize">
+                    raphael moss
+                  </div>
+                  <div class="chefs_position text-center text-capitalize">
+                    executive head chef
+                  </div>
+                </div>
+                <div class="additional">
+                  <div class="chefs_name text-center text-capitalize">
+                    martha martin
+                  </div>
+                  <div class="chefs_position text-center text-capitalize">
+                    executive chef
+                  </div>
+                  <div class="chefs_description text-center">
+                    Nulla quis efficitur lacus sulvinar suere ausue in eduis
+                    euro vesatien arcuman ontese auctor ac aleuam aretra.
+                  </div>
+                  <div class="chefs_links text-center">
+                    <a href="">
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- wine bar -->
+      <section class="about_candore">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="wine_bar">
+                <img src="images/banner3.jpg" alt="" class="wine_bar_img" />
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="wine_bar_info">
+                <span class="title_top d-block">candóre wine bar</span>
+                <h2>wine bar menu</h2>
+                <!-- first wine -->
+                <div class="starter_dish d-flex justify-content-between">
+                  <a href="">
+                    <img src="images/riscowine.jpg" alt="" />
+                  </a>
+                  <div class="dish_body">
+                    <div class="dish_body_main d-flex justify-content-between">
+                      <div class="mb_meal_name text-capitalize">
+                        Riscos Malbec
+                      </div>
+                      <div class="mb_meal_deco"></div>
+                      <div class="mb_meal_price">$25.00</div>
+                    </div>
+                    <div class="mb_meal_descr font-italic">
+                      Full, Redcurrant, Spice, Chile
+                    </div>
+                  </div>
+                </div>
+                <!-- second wine -->
+                <div class="starter_dish d-flex justify-content-between">
+                  <a href="">
+                    <img src="images/amaronewine.jpg" alt="" />
+                  </a>
+                  <div class="dish_body">
+                    <div class="dish_body_main d-flex justify-content-between">
+                      <div class="mb_meal_name text-capitalize">
+                        Amarone Classico
+                      </div>
+                      <div class="mb_meal_deco"></div>
+                      <div class="mb_meal_price">$20.00</div>
+                    </div>
+                    <div class="mb_meal_descr font-italic">
+                      Intense, Rich, Spice, Italy
+                    </div>
+                  </div>
+                </div>
+                <!-- third wine -->
+                <div class="starter_dish d-flex justify-content-between">
+                  <a href="">
+                    <img src="images/wallebertawine.jpg" alt="" />
+                  </a>
+                  <div class="dish_body">
+                    <div class="dish_body_main d-flex justify-content-between">
+                      <div class="mb_meal_name text-capitalize">
+                        Valle Berta Gavi
+                      </div>
+                      <div class="mb_meal_deco"></div>
+                      <div class="mb_meal_price">$45.00</div>
+                    </div>
+                    <div class="mb_meal_descr font-italic">
+                      Clean, Soft, Honeysuckle, Italy
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- food category -->
+      <section class="about_candore aside_like_background">
+        <div class="container">
+          <span class="title_top d-block text-center">our services</span>
+          <h2 class="text-center">food category</h2>
+          <div class="row">
+            <!-- first -->
+            <div class="col-lg-4">
+              <div class="food_cat text-center position-relative">
+                <img
+                  src="images/hamburger_img.png"
+                  alt=""
+                  class="food_cat_img"
+                />
+                <h6 class="text-capitalize">Cheeseburger</h6>
+                <span class="food_cat_text">
+                  Restaurant vulputate massa ons amet ravida haretra nuam the
+                  drana miss uctus enec accumsan aliquam sit sapien.
+                </span>
+                <div class="back_shape position-absolute">
+                  <img src="images/hamburger.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <!-- second -->
+            <div class="col-lg-4">
+              <div class="food_cat text-center position-relative">
+                <img
+                  src="images/pizza_yellow.png"
+                  alt=""
+                  class="food_cat_img"
+                />
+                <h6 class="text-capitalize">Pizza Slice</h6>
+                <span class="food_cat_text">
+                  Restaurant vulputate massa ons amet ravida haretra nuam the
+                  drana miss uctus enec accumsan aliquam sit sapien.
+                </span>
+                <div class="back_shape position-absolute">
+                  <img src="images/pizza_img.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <!-- third -->
+            <div class="col-lg-4">
+              <div class="food_cat text-center position-relative">
+                <img src="images/coffee-cup.png" alt="" class="food_cat_img" />
+                <h6 class="text-capitalize">Coffee-Cup</h6>
+                <span class="food_cat_text">
+                  Restaurant vulputate massa ons amet ravida haretra nuam the
+                  drana miss uctus enec accumsan aliquam sit sapien.
+                </span>
+                <div class="back_shape position-absolute">
+                  <img src="images/coffee-cup_black.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <!-- fourth -->
+            <div class="col-lg-4">
+              <div class="food_cat text-center position-relative">
+                <img src="images/chicken_leg.png" alt="" class="food_cat_img" />
+                <h6 class="text-capitalize">Chicken-Leg</h6>
+                <span class="food_cat_text">
+                  Restaurant vulputate massa ons amet ravida haretra nuam the
+                  drana miss uctus enec accumsan aliquam sit sapien.
+                </span>
+                <div class="back_shape position-absolute">
+                  <img src="images/boiled_chicken_black.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <!-- fifth -->
+            <div class="col-lg-4">
+              <div class="food_cat text-center position-relative">
+                <img src="images/fish_dish.png" alt="" class="food_cat_img" />
+                <h6 class="text-capitalize">fish</h6>
+                <span class="food_cat_text">
+                  Restaurant vulputate massa ons amet ravida haretra nuam the
+                  drana miss uctus enec accumsan aliquam sit sapien.
+                </span>
+                <div class="back_shape position-absolute">
+                  <img src="images/fish_dish_black.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <!-- sixths -->
+            <div class="col-lg-4">
+              <div class="food_cat text-center position-relative">
+                <img
+                  src="images/wedding_cake.png"
+                  alt=""
+                  class="food_cat_img"
+                />
+                <h6 class="text-capitalize">wedding cake</h6>
+                <span class="food_cat_text">
+                  Restaurant vulputate massa ons amet ravida haretra nuam the
+                  drana miss uctus enec accumsan aliquam sit sapien.
+                </span>
+                <div class="back_shape position-absolute">
+                  <img src="images/wedding_cake_black.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- booking form -->
+      <section class="about_candore booking_info">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <span class="d-block five_stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+              <h5>
+                A modern restaurant with a menu that will make your mouth water.
+              </h5>
+              <div class="reservation">
+                <img src="images/tray_yellow.png" alt="" />
+                <a href="tel:+8551004444">
+                  reservation
+                  <span>855 100 4444</span>
+                </a>
+              </div>
+              <span class="call_us d-block">
+                <i class="fa-solid fa-check"></i>
+                Call us, it's toll-free.
+              </span>
+            </div>
+            <!-- for form -->
+            <div class="col-lg-6">
+              <div class="form_background">
+                <h4 class="text-capitalize text-center">make a reservation</h4>
+                <form>
+                  <div class="form-row">
+                    <!-- for name -->
+                    <div class="form-group col-lg-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id=""
+                        placeholder="Your Name"
+                      />
+                    </div>
+                    <!-- for phone -->
+                    <div class="form-group col-lg-6">
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id=""
+                        placeholder="Phone"
+                      />
+                    </div>
+                    <!-- for email -->
+                    <div class="form-group col-lg-6">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id=""
+                        placeholder="Email Address"
+                      />
+                    </div>
+                    <!-- for date -->
+                    <div class="form-group col-lg-6">
+                      <input
+                        type="date"
+                        class="form-control"
+                        id=""
+                        placeholder="Date"
+                      />
+                    </div>
+                    <!-- for persons -->
+                    <div class="form-group col-lg-6">
+                      <select id="" class="form-control">
+                        <option value="person">Person</option>
+                        <option value="1 person">1 Person</option>
+                        <option value="2 person">2 Person</option>
+                        <option value="3 person">3 Person</option>
+                        <option value="4 person">4 Person</option>
+                        <option value="5 person">5 Person</option>
+                        <option value="6 person">6 Person</option>
+                        <option value="7 person">7 Person</option>
+                      </select>
+                    </div>
+                    <!-- for time -->
+                    <div class="form-group col-lg-6">
+                      <select id="" class="form-control">
+                        <option value="time">Time</option>
+                        <option value="10:00 am">10:00 am</option>
+                        <option value="11:00 am">11:00 am</option>
+                        <option value="12:00 pm">12:00 pm</option>
+                        <option value="14:00 pm">14:00 pm</option>
+                        <option value="16:00 pm">16:00 pm</option>
+                        <option value="18:00 pm">18:00 pm</option>
+                        <option value="20:00 pm">20:00 pm</option>
+                      </select>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-block text-uppercase">
+                    check availability
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="main_body">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <h3 class="text-capitalize">about us</h3>
+            <span class="footer_text td-block">
+              restaurant metus dibus eudui aolicitudin istique lacus in the
+              vestibulum congue est vitae maximus duru ne lacus in massa
+              tristique aharetra ne ut isum.
+            </span>
+            <button class="change_lang d-block text-capitalize">
+              english <i class="fa-solid fa-globe"></i>
+            </button>
+          </div>
+          <div class="col-lg-4">
+            <h3 class="text-capitalize">contact us</h3>
+            <span class="footer_text d-block">
+              <a href="" class="d-block">
+                1616 Broadway NY, New York 10001 United States of America
+              </a>
+            </span>
+            <a href="callto:855 100 4444" class="call_number d-block">
+              855 100 444
+            </a>
+            <a href="mailto:info@candore.com" class="email d-block">
+              info@candore.com
+            </a>
+
+            <div class="footer_links">
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <h3 class="text-capitalize">subscribe</h3>
+            <span class="subscribe_text footer_text d-block">
+              want to be notified when we launch a new template or an udpate.
+              Just sign up and we'll send you a notification by email.
+            </span>
+            <form
+              action=""
+              method="get"
+              class="subscribe_form position-relative"
+            >
+              <input type="email" name="" id="" class="subscribe_input" />
+              <button class="subscribe position-absolute text-uppercase">
+                subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer_line"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="footer_bottom text-capitalize">
+              <span>
+                <span class="copyright"></span>
+                copyrght 2023. all rights reserved
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- bootstrap javascript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

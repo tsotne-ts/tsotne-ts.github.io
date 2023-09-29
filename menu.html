@@ -1,0 +1,1745 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu - Candóre</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Libre+Caslon+Display&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bs.css" />
+    <!-- bootstrap 5.3 css cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <!-- my css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- cdnjs.com link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- header Section -->
+    <header>
+      <nav>
+        <button
+          class="btn navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasLeft"
+          aria-controls="offcanvasLeft"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="16"
+            fill="currentColor"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+        </button>
+
+        <div
+          class="offcanvas offcanvas-start candore_box"
+          tabindex="-1"
+          id="offcanvasLeft"
+          aria-labelledby="offcanvasLeftLabel"
+        >
+          <div class="offcanvas-header position-relative">
+            <a class="navbar-brand" href="index.html">
+              <img
+                src="images/logo-dark.png"
+                alt="logo of the brand"
+                class="logo"
+              />
+            </a>
+            <button
+              type="button"
+              class="btn-close position-absolute"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body text-uppercase">
+            <ul class="list-group nav_list">
+              <li class="list-group-item">
+                <a class="active" href="index.html">home</a>
+              </li>
+              <li class="list-group-item">
+                <a href="about.html">about</a>
+              </li>
+              <li class="list-group-item">
+                <a href="menu.html">menu</a>
+              </li>
+              <li class="list-group-item">
+                <a href="blog.html">blog</a>
+              </li>
+
+              <li class="list-group-item">
+                <a href="contact.html">contact</a>
+              </li>
+            </ul>
+
+            <ul class="nav_links">
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- main body -->
+    <main class="main_body">
+      <!-- about candóre section -->
+      <section class="cover menu_backimg">
+        <div class="cover_text text-center">
+          <span class="d-block cover_top_title text-uppercase text-center">
+            restaurant
+          </span>
+          <h2 class="text-capitalize text-center">menu book</h2>
+          <span class="cover_descr text-capitalize text-center">
+            food and wine
+          </span>
+        </div>
+      </section>
+      <!-- menu book -->
+      <section class="about_candore">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 mx-auto">
+              <ul class="nav nav-tabs menu_ul" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active text-capitalize"
+                    id="home-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#home-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="home-tab-pane"
+                    aria-selected="true"
+                  >
+                    Starter
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="main-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#main-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="main-tab-pane"
+                    aria-selected="false"
+                  >
+                    Main
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="salads-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#salads-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="salads-tab-pane"
+                    aria-selected="false"
+                  >
+                    Salads
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="dessert-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#dessert-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="dessert-tab-pane"
+                    aria-selected="false"
+                  >
+                    Dessert
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="wine-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#wine-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="wine-tab-pane"
+                    aria-selected="false"
+                  >
+                    Wine
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="home-tab-pane"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+            tabindex="0"
+          >
+            <!-- starter -->
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <h2 class="text-center text-capitalize">starter</h2>
+                </div>
+                <div class="col-lg-6">
+                  <!-- first -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/startermozzarella.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          mozzarella diapers
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$27.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        fried mozzarella sticks, marinara sauce
+                      </div>
+                    </div>
+                  </div>
+                  <!-- second -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/startermozzarella.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          buffalo wings
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$30.50</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        spicy chicken wings, blue cheese sauce, carrot, celery
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <!-- first -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/startermozzarella.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          onion rings
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$15.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        fried onion rings, smoked aioli
+                      </div>
+                    </div>
+                  </div>
+                  <!-- second -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/startermozzarella.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          chilli con carne
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$20.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        spicy ground beef, bacon, kidney beans
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <!-- first -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/startermozzarella.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          mozzarella diapers
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$27.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        fried mozzarella sticks, marinara sauce
+                      </div>
+                    </div>
+                  </div>
+                  <!-- second -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/startermozzarella.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          buffalo wings
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$30.50</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        spicy chicken wings, blue cheese sauce, carrot, celery
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <!-- first -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/startermozzarella.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          onion rings
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$15.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        fried onion rings, smoked aioli
+                      </div>
+                    </div>
+                  </div>
+                  <!-- second -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/startermozzarella.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          chilli con carne
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$20.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        spicy ground beef, bacon, kidney beans
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <!-- first -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/startermozzarella.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          mozzarella diapers
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$27.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        fried mozzarella sticks, marinara sauce
+                      </div>
+                    </div>
+                  </div>
+                  <!-- second -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/startermozzarella.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          buffalo wings
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$30.50</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        spicy chicken wings, blue cheese sauce, carrot, celery
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <!-- first -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/startermozzarella.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          onion rings
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$15.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        fried onion rings, smoked aioli
+                      </div>
+                    </div>
+                  </div>
+                  <!-- second -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/startermozzarella.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          chilli con carne
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$20.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        spicy ground beef, bacon, kidney beans
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="main-tab-pane"
+            role="tabpanel"
+            aria-labelledby="main-tab"
+            tabindex="0"
+          >
+            <!-- main -->
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <h2 class="text-center text-capitalize">main courses</h2>
+                </div>
+                <div class="col-lg-6">
+                  <!-- first -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/rusty'sburger.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          Rusty's Burger
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$35.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        smoked pulled beef ribs, bbq sauce, cheddar, crisps
+                      </div>
+                    </div>
+                  </div>
+                  <!-- second -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/cajun.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          Cajun Fish Steak
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$30.0</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        Cajun spicied seabass, deep fried baby potatoes
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <!-- first -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/southernfriedchicken.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          Southern Fried Chicken
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$45.50</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        Cajun coated chicken breast, fries and honey mustard
+                      </div>
+                    </div>
+                  </div>
+                  <!-- second -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/tempura.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          House Avocado Tempura
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$40.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        Sweetcorn kernels, butter, cloves garlic, potato
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <!-- first -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/rusty'sburger.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          Rusty's Burger
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$35.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        smoked pulled beef ribs, bbq sauce, cheddar, crisps
+                      </div>
+                    </div>
+                  </div>
+                  <!-- second -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/cajun.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          Cajun Fish Steak
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$30.0</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        Cajun spicied seabass, deep fried baby potatoes
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <!-- first -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/southernfriedchicken.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          Southern Fried Chicken
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$45.50</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        Cajun coated chicken breast, fries and honey mustard
+                      </div>
+                    </div>
+                  </div>
+                  <!-- second -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/tempura.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          House Avocado Tempura
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$40.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        Sweetcorn kernels, butter, cloves garlic, potato
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <!-- first -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/rusty'sburger.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          Rusty's Burger
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$35.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        smoked pulled beef ribs, bbq sauce, cheddar, crisps
+                      </div>
+                    </div>
+                  </div>
+                  <!-- second -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/cajun.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          Cajun Fish Steak
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$30.0</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        Cajun spicied seabass, deep fried baby potatoes
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <!-- first -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/southernfriedchicken.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          Southern Fried Chicken
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$45.50</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        Cajun coated chicken breast, fries and honey mustard
+                      </div>
+                    </div>
+                  </div>
+                  <!-- second -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/tempura.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          House Avocado Tempura
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$40.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        Sweetcorn kernels, butter, cloves garlic, potato
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="salads-tab-pane"
+            role="tabpanel"
+            aria-labelledby="salads-tab"
+            tabindex="0"
+          >
+            <!-- salads -->
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <h2 class="text-center text-capitalize">salads</h2>
+                </div>
+                <div class="col-lg-6">
+                  <!-- first -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/caesarsalad.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          caesar salad
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$15.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        romaine lettuce, croutons, parmigiano
+                      </div>
+                    </div>
+                  </div>
+                  <!-- second -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/waldrofsalad.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          Waldorf Salad
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$10.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        lettuce, celery, apple, grape, walnut, waldorf sauce
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <!-- first -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/grilledsalmonsalad.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          grilled salmon salad
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$25.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        grilled salmon, mixed greens, capers, orange slices
+                      </div>
+                    </div>
+                  </div>
+                  <!-- second -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/chickencobsalad.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          Chicken Cobb Salad
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$30.50</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        iceberg lettuce, cherry tomatoes, blue cheese, avocado
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <!-- first -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/caesarsalad.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          caesar salad
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$15.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        romaine lettuce, croutons, parmigiano
+                      </div>
+                    </div>
+                  </div>
+                  <!-- second -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/waldrofsalad.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          Waldorf Salad
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$10.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        lettuce, celery, apple, grape, walnut, waldorf sauce
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <!-- first -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/grilledsalmonsalad.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          grilled salmon salad
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$25.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        grilled salmon, mixed greens, capers, orange slices
+                      </div>
+                    </div>
+                  </div>
+                  <!-- second -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/chickencobsalad.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          Chicken Cobb Salad
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$30.50</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        iceberg lettuce, cherry tomatoes, blue cheese, avocado
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <!-- first -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/caesarsalad.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          caesar salad
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$15.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        romaine lettuce, croutons, parmigiano
+                      </div>
+                    </div>
+                  </div>
+                  <!-- second -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/waldrofsalad.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          Waldorf Salad
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$10.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        lettuce, celery, apple, grape, walnut, waldorf sauce
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <!-- first -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/grilledsalmonsalad.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          grilled salmon salad
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$25.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        grilled salmon, mixed greens, capers, orange slices
+                      </div>
+                    </div>
+                  </div>
+                  <!-- second -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/chickencobsalad.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          Chicken Cobb Salad
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$30.50</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        iceberg lettuce, cherry tomatoes, blue cheese, avocado
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="dessert-tab-pane"
+            role="tabpanel"
+            aria-labelledby="dessert-tab"
+            tabindex="0"
+          >
+            <!-- desserts -->
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <h2 class="text-center text-capitalize">desserts</h2>
+                </div>
+                <div class="col-lg-6">
+                  <!-- first -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/ NewYorkCheesecake.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          New York Cheesecake
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$20.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        Cheesecake, strawberry & lime salad
+                      </div>
+                    </div>
+                  </div>
+                  <!-- second -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/Rusty’sice-cream.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          Rusty's ice-cream
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$10.50</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        Vanilla, bourbon, cookie, chocolate ice-cream
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <!-- first -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/veganpotato.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          Vegan Potato Waffles
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$18.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        Chocolate chip cookies, marshmallow, chocolate
+                      </div>
+                    </div>
+                  </div>
+                  <!-- second -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/applecrumble.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          Apple & Pear Crumble
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">40.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        Caramelized pear, oat crumble, vanilla ice-cream
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <!-- first -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/ NewYorkCheesecake.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          New York Cheesecake
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$20.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        Cheesecake, strawberry & lime salad
+                      </div>
+                    </div>
+                  </div>
+                  <!-- second -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/Rusty’sice-cream.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          Rusty's ice-cream
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$10.50</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        Vanilla, bourbon, cookie, chocolate ice-cream
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <!-- first -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/veganpotato.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          Vegan Potato Waffles
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$18.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        Chocolate chip cookies, marshmallow, chocolate
+                      </div>
+                    </div>
+                  </div>
+                  <!-- second -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/applecrumble.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          Apple & Pear Crumble
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">40.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        Caramelized pear, oat crumble, vanilla ice-cream
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <!-- first -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/ NewYorkCheesecake.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          New York Cheesecake
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$20.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        Cheesecake, strawberry & lime salad
+                      </div>
+                    </div>
+                  </div>
+                  <!-- second -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/Rusty’sice-cream.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          Rusty's ice-cream
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$10.50</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        Vanilla, bourbon, cookie, chocolate ice-cream
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <!-- first -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/veganpotato.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          Vegan Potato Waffles
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$18.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        Chocolate chip cookies, marshmallow, chocolate
+                      </div>
+                    </div>
+                  </div>
+                  <!-- second -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/applecrumble.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          Apple & Pear Crumble
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">40.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        Caramelized pear, oat crumble, vanilla ice-cream
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="wine-tab-pane"
+            role="tabpanel"
+            aria-labelledby="wine-tab"
+            tabindex="0"
+          >
+            <!-- wine -->
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <h2 class="text-center text-capitalize">wine</h2>
+                </div>
+                <div class="col-lg-6">
+                  <!-- first -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/riscowine.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          Riscos Malbec
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$25.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        Full, Redcurrant, Spice, Chile
+                      </div>
+                    </div>
+                  </div>
+                  <!-- second -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/domperignonwine.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          Dom Perignon
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$30.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        Stylish, Premium, Iconic, Champagne
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <!-- first -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/amaronewine.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          Amarone Classico
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$20.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        Intense, Rich, Spice, Italy
+                      </div>
+                    </div>
+                  </div>
+                  <!-- second -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/wallebertawine.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          Valle Berta Gavi
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$45.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        Clean, Soft, Honeysuckle, Italy
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <!-- first -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/riscowine.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          Riscos Malbec
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$25.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        Full, Redcurrant, Spice, Chile
+                      </div>
+                    </div>
+                  </div>
+                  <!-- second -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/domperignonwine.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          Dom Perignon
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$30.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        Stylish, Premium, Iconic, Champagne
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <!-- first -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/amaronewine.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          Amarone Classico
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$20.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        Intense, Rich, Spice, Italy
+                      </div>
+                    </div>
+                  </div>
+                  <!-- second -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/wallebertawine.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          Valle Berta Gavi
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$45.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        Clean, Soft, Honeysuckle, Italy
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <!-- first -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/riscowine.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          Riscos Malbec
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$25.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        Full, Redcurrant, Spice, Chile
+                      </div>
+                    </div>
+                  </div>
+                  <!-- second -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/domperignonwine.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          Dom Perignon
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$30.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        Stylish, Premium, Iconic, Champagne
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <!-- first -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/amaronewine.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          Amarone Classico
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$20.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        Intense, Rich, Spice, Italy
+                      </div>
+                    </div>
+                  </div>
+                  <!-- second -->
+                  <div class="starter_dish d-flex justify-content-between">
+                    <a href="">
+                      <img src="images/wallebertawine.jpg" alt="" />
+                    </a>
+                    <div class="dish_body">
+                      <div
+                        class="dish_body_main d-flex justify-content-between"
+                      >
+                        <div class="mb_meal_name text-capitalize">
+                          Valle Berta Gavi
+                        </div>
+                        <div class="mb_meal_deco"></div>
+                        <div class="mb_meal_price">$45.00</div>
+                      </div>
+                      <div class="mb_meal_descr font-italic">
+                        Clean, Soft, Honeysuckle, Italy
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- booking form -->
+      <section class="about_candore booking_info">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <span class="d-block five_stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+              <h5>
+                A modern restaurant with a menu that will make your mouth water.
+              </h5>
+              <div class="reservation">
+                <img src="images/tray_yellow.png" alt="" />
+                <a href="tel:+8551004444">
+                  reservation
+                  <span>855 100 4444</span>
+                </a>
+              </div>
+              <span class="call_us d-block">
+                <i class="fa-solid fa-check"></i>
+                Call us, it's toll-free.
+              </span>
+            </div>
+            <!-- for form -->
+            <div class="col-lg-6">
+              <div class="form_background">
+                <h4 class="text-capitalize text-center">make a reservation</h4>
+                <form>
+                  <div class="form-row">
+                    <!-- for name -->
+                    <div class="form-group col-lg-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id=""
+                        placeholder="Your Name"
+                      />
+                    </div>
+                    <!-- for phone -->
+                    <div class="form-group col-lg-6">
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id=""
+                        placeholder="Phone"
+                      />
+                    </div>
+                    <!-- for email -->
+                    <div class="form-group col-lg-6">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id=""
+                        placeholder="Email Address"
+                      />
+                    </div>
+                    <!-- for date -->
+                    <div class="form-group col-lg-6">
+                      <input
+                        type="date"
+                        class="form-control"
+                        id=""
+                        placeholder="Date"
+                      />
+                    </div>
+                    <!-- for persons -->
+                    <div class="form-group col-lg-6">
+                      <select id="" class="form-control">
+                        <option value="person">Person</option>
+                        <option value="1 person">1 Person</option>
+                        <option value="2 person">2 Person</option>
+                        <option value="3 person">3 Person</option>
+                        <option value="4 person">4 Person</option>
+                        <option value="5 person">5 Person</option>
+                        <option value="6 person">6 Person</option>
+                        <option value="7 person">7 Person</option>
+                      </select>
+                    </div>
+                    <!-- for time -->
+                    <div class="form-group col-lg-6">
+                      <select id="" class="form-control">
+                        <option value="time">Time</option>
+                        <option value="10:00 am">10:00 am</option>
+                        <option value="11:00 am">11:00 am</option>
+                        <option value="12:00 pm">12:00 pm</option>
+                        <option value="14:00 pm">14:00 pm</option>
+                        <option value="16:00 pm">16:00 pm</option>
+                        <option value="18:00 pm">18:00 pm</option>
+                        <option value="20:00 pm">20:00 pm</option>
+                      </select>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-block text-uppercase">
+                    check availability
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="main_body">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <h3 class="text-capitalize">about us</h3>
+            <span class="footer_text td-block">
+              restaurant metus dibus eudui aolicitudin istique lacus in the
+              vestibulum congue est vitae maximus duru ne lacus in massa
+              tristique aharetra ne ut isum.
+            </span>
+            <button class="change_lang d-block text-capitalize">
+              english <i class="fa-solid fa-globe"></i>
+            </button>
+          </div>
+          <div class="col-lg-4">
+            <h3 class="text-capitalize">contact us</h3>
+            <span class="footer_text d-block">
+              <a href="" class="d-block">
+                1616 Broadway NY, New York 10001 United States of America
+              </a>
+            </span>
+            <a href="callto:855 100 4444" class="call_number d-block">
+              855 100 444
+            </a>
+            <a href="mailto:info@candore.com" class="email d-block">
+              info@candore.com
+            </a>
+
+            <div class="footer_links">
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <h3 class="text-capitalize">subscribe</h3>
+            <span class="subscribe_text footer_text d-block">
+              want to be notified when we launch a new template or an udpate.
+              Just sign up and we'll send you a notification by email.
+            </span>
+            <form
+              action=""
+              method="get"
+              class="subscribe_form position-relative"
+            >
+              <input type="email" name="" id="" class="subscribe_input" />
+              <button class="subscribe position-absolute text-uppercase">
+                subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer_line"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="footer_bottom text-capitalize">
+              <span>
+                <span class="copyright"></span>
+                copyrght 2023. all rights reserved
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- bootstrap javascript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
